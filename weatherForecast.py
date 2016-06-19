@@ -9,7 +9,7 @@ import json, requests, sys, pprint, os
 # extract location from the command line arguments
 if len(sys.argv) <2:
     print('Location missing. Usage: weatherForecast.py location  E.g. weatherForecast.py Christchurch, NZ')
-    sys.exit()
+    sys.exit(1)
 location = ' '.join(sys.argv[1:])
 
 # Download the JSON data from OpenWeatherMap.org via API
